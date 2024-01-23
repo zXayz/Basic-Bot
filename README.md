@@ -46,7 +46,7 @@ Basic Bot is a simple Discord bot built using the discord.py library. It provide
     ```
     - Replace your_bot_token_here with the actual token from the Discord **[Developer Portal](https://discord.com/developers/applications)**.
 5. **Run the Bot:**
-    ```diff
+    ```bash
     python bot.py | python3 bot.py
     ```
 6. **Invite the Bot to Your Server:**
@@ -57,7 +57,7 @@ Basic Bot is a simple Discord bot built using the discord.py library. It provide
 > Once the bot is invited to your server and running, use the specified command prefix (default is !) to interact with the bot.
 
 - Try the sample command:
-    ```diff
+    ```bash
     !hello
     ```
 ## Contributing

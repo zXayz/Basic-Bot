@@ -9,7 +9,16 @@ config = dotenv_values(".env")
 # checkign if it is a development stage or not
 is_dev = config["ENVIRONMENT"] == "development"
 
-intents = discord.Intents.all()
+# If required enable the intents.
+intents = discord.Intents(
+                            guilds=True,
+                            members=True,
+                            # bans=True,
+                            # voice_states=True,
+                            messages=True,
+                            # message_content=True, 
+                            # presences=True,
+                        )
 # Create a bot instance
 bot = commands.Bot(
                 command_prefix=config["DEFAULT_PREFIX"],
